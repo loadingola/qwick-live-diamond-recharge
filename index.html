@@ -1,206 +1,251 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#160d2b">
-<title>Loading.ola</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qwick Live Diamond Recharge</title>
+
 <style>
-:root { --purple:#251044; --green:#8cff35; --blue:#3478f6; }
-* { box-sizing:border-box; }
-html, body { margin:0; min-height:100%; }
-body {
-  min-height:100vh;
-  min-height:100dvh;
-  font-family: Arial, Helvetica, sans-serif;
-  color:#fff;
-  background:#10091d;
-}
-.screen {
-  min-height:100vh;
-  min-height:100dvh;
-  display:none;
-  align-items:center;
-  justify-content:center;
-  position:relative;
-  overflow:hidden;
-  padding: max(24px, env(safe-area-inset-top)) 24px max(24px, env(safe-area-inset-bottom));
-}
-.screen.active { display:flex; }
-.login-screen {
-  background-image:
-    linear-gradient(to bottom, rgba(27,12,57,.38), rgba(24,9,48,.68) 48%, rgba(17,7,33,.97)),
-    url("background.png");
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-}
-.content { width:100%; max-width:440px; text-align:center; margin:auto; }
-.brand {
-  font-size:clamp(42px, 11vw, 64px);
-  line-height:1.05;
-  font-weight:800;
-  letter-spacing:-2px;
-  text-shadow:0 3px 18px rgba(0,0,0,.25);
-  margin:0;
-}
-.tagline { font-size:clamp(19px,5vw,25px); font-weight:700; font-style:italic; margin:18px 0 0; }
-.login-area { margin-top:clamp(90px, 25vh, 230px); }
-.login-label { font-size:18px; font-weight:700; margin-bottom:22px; color:#f3edf9; }
-.login-label span { padding:0 12px; opacity:.8; }
-.btn {
-  width:100%; border:0; border-radius:999px; padding:17px 18px;
-  min-height:58px; font-size:18px; font-weight:800; cursor:pointer;
-  margin:0 0 15px; display:flex; align-items:center; justify-content:center; gap:14px;
-}
-.facebook { background:var(--blue); color:#fff; }
-.facebook-mark { font-family:Arial,sans-serif; font-weight:900; font-size:27px; }
-.icon-row { display:flex; justify-content:center; gap:24px; margin:10px 0 0; }
-.circle-btn {
-  width:64px; height:64px; border:0; border-radius:50%; cursor:pointer;
-  display:flex; align-items:center; justify-content:center; font-size:29px;
-  box-shadow:0 4px 15px rgba(0,0,0,.2);
-}
-.google { background:#fff; color:#4285f4; font-weight:900; }
-.phone { background:#ffbf00; color:#fff; }
-.help { margin-top:clamp(55px, 10vh, 100px); color:#c9c0d3; font-size:16px; }
-.help button { color:var(--green); border:0; background:none; font-size:inherit; cursor:pointer; }
-.terms { display:flex; gap:10px; align-items:flex-start; text-align:left; margin-top:30px; color:#c7bdce; font-size:13px; line-height:1.5; }
-.terms input { accent-color:#ffdf00; width:19px; height:19px; flex:0 0 auto; margin-top:1px; }
-.terms a { color:#c7bdce; text-decoration:underline; }
-.lang { position:absolute; right:24px; bottom:clamp(155px, 24vh, 230px); color:#fff; background:transparent; border:0; font-size:14px; }
-.form-screen { background:linear-gradient(145deg,#32105a,#160d2b 72%); }
-.panel {
-  width:100%; max-width:410px; background:#fff; color:#292333;
-  border-radius:25px; padding:28px 22px; text-align:center;
-  box-shadow:0 18px 50px rgba(0,0,0,.28);
-}
-.panel .mini-brand { color:#d94d99; font-size:30px; font-weight:800; margin:0 0 8px; }
-.panel h2 { margin:8px 0; color:#43205e; }
-.panel p { color:#6d6575; line-height:1.5; }
-.field {
-  width:100%; padding:15px; border:1px solid #ddd5e5; border-radius:12px;
-  font-size:16px; margin:8px 0; background:#fff;
-}
-.action { background:linear-gradient(90deg,#f34f9a,#8d4be5); color:#fff; }
-.back { background:transparent; color:#7a438f; border:0; font-size:15px; padding:12px; cursor:pointer; }
-.small-note { font-size:12px !important; color:#81798a !important; }
-@media (max-height:700px) {
-  .login-area { margin-top:45px; }
-  .help { margin-top:28px; }
-  .lang { bottom:135px; }
-}
+*{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
+body{background:radial-gradient(ellipse at top,#492064,#1d102f 48%,#0b0714);color:#fff;min-height:100vh;padding:14px}
+.container{max-width:480px;margin:auto}
+header{text-align:center;padding:23px 5px}
+.brand{width:75px;height:75px;margin:0 auto 13px;border-radius:23px;display:grid;place-items:center;background:linear-gradient(135deg,#ff42c8,#803cff);box-shadow:0 0 30px #d83aff70;font-size:38px}
+header h1{font-size:23px;background:linear-gradient(90deg,#ff8add,#bba0ff);-webkit-background-clip:text;color:transparent}
+header p{font-size:12px;color:#c8b5dc;margin-top:8px}
+.card{margin:14px 0;padding:18px;border:1px solid #70458d;border-radius:19px;background:linear-gradient(145deg,#2b1942,#191126);box-shadow:0 8px 25px #0005}
+h2{font-size:17px;color:#ff8cdd;margin-bottom:15px}
+.apps{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}
+.app{text-align:center;padding:10px 4px;border:1px solid #70458d;border-radius:15px;background:linear-gradient(145deg,#302047,#191126)}
+.app img{width:100%;max-width:66px;aspect-ratio:1;object-fit:cover;border-radius:15px;display:block;margin:0 auto 9px;background:#fff}
+.app span{font-size:11px;font-weight:bold;color:white}
+input{width:100%;padding:14px;margin:7px 0;border:1px solid #704d8c;border-radius:11px;background:#130d20;color:white;font-size:15px;outline:none}
+button{width:100%;padding:14px;margin:6px 0;border:0;border-radius:11px;background:linear-gradient(90deg,#ed3dbd,#813dff);color:white;font-size:15px;font-weight:bold;cursor:pointer}
+.packages{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.packages button{margin:0}
+.price{text-align:center;font-size:29px;color:#ff8cdd;font-weight:bold;margin:18px}
+.muted{font-size:12px;color:#c2b2d6;line-height:1.6}
+.result{text-align:center;margin-top:14px}
+.result img{width:76px;height:76px;border-radius:50%;object-fit:cover}
+.result p{margin-top:7px}
+.qr-area{text-align:center}
+.qr-area img{display:block;width:210px;height:210px;object-fit:contain;background:white;padding:8px;border-radius:12px;margin:12px auto}
+.upi{padding:13px;background:#160e23;border:1px solid #70458d;border-radius:10px;margin-top:12px;word-break:break-all}
+.notice{padding:12px;background:#392342;border:1px solid #9856a6;border-radius:11px;font-size:12px;line-height:1.6;color:#f6dafa}
+.admin{background:#39244e;border:1px solid #8755a9}
+.dashboard{display:none;margin-top:15px;padding:14px;background:#160e23;border:1px solid #70458d;border-radius:12px}
+.status{padding:12px;margin:8px 0;background:#302047;border-radius:9px;font-size:13px}
+footer{text-align:center;padding:20px;color:#a99ab8;font-size:12px}
 </style>
 </head>
+
 <body>
+<div class="container">
 
-<section id="main" class="screen login-screen active">
-  <button class="lang" type="button" onclick="alert('Language selection will be added later.')">हिन्दी</button>
-  <main class="content">
-    <h1 class="brand">Loading.ola</h1>
-    <p class="tagline">Let's Connect!</p>
+<header>
+ <div class="brand">💎</div>
+ <h1>Qwick Live Diamond Recharge</h1>
+ <p>Premium Multi App Portal</p>
+</header>
 
-    <div class="login-area">
-      <div class="login-label">— <span>Login with</span> —</div>
-
-      <button class="btn facebook" type="button" onclick="socialDemo('Facebook')">
-        <span class="facebook-mark">f</span> FACEBOOK
-      </button>
-
-      <div class="icon-row">
-        <button class="circle-btn google" type="button" aria-label="Continue with Google" onclick="socialDemo('Google')">G</button>
-        <button class="circle-btn phone" type="button" aria-label="Login with mobile" onclick="showScreen('mobile')">▣</button>
-      </div>
-    </div>
-
-    <div class="help">Problems logging in? <button type="button" onclick="alert('Help and account recovery will be added in a later version.')">Get Help</button></div>
-
-    <label class="terms">
-      <input id="termsCheck" type="checkbox">
-      <span>I have read and agree to the <a href="#" onclick="legal('Terms of Service');return false;">Terms of Service</a>, <a href="#" onclick="legal('Privacy Policy');return false;">Privacy Policy</a> and <a href="#" onclick="legal('Community Rules');return false;">Community Rules</a>. This app is intended for adults aged 18+ only.</span>
-    </label>
-  </main>
-</section>
-
-<section id="mobile" class="screen form-screen">
-  <div class="panel">
-    <div class="mini-brand">❤️ Loading.ola</div>
-    <h2>Mobile Login</h2>
-    <p>Choose how you want to sign in.</p>
-    <input class="field" id="mobileNumber" type="tel" inputmode="numeric" maxlength="10" placeholder="10-digit mobile number">
-    <input class="field" id="password" type="password" placeholder="Password (demo only)">
-    <button class="btn action" type="button" onclick="demoLogin()">Continue with Password</button>
-    <button class="btn action" type="button" onclick="sendOtpDemo()">Login with OTP</button>
-    <p class="small-note">Demo screen only. No SMS or real account login is connected.</p>
-    <button class="back" type="button" onclick="showScreen('main')">← Back</button>
+<section class="card">
+ <h2>🎮 Our Apps</h2>
+ <div class="apps">
+  <div class="app">
+   <img src="https://play-lh.googleusercontent.com/ELmm0dFIoGMojIbGexO8u1kjsDuK0i8wmHf3uaz4pTek7NL3hqTFUocfdbfqfHNzhKrA_fmDl5uEhDkQVWZnYA=w240-h480" alt="Qwick Live">
+   <span>Qwick Live</span>
   </div>
+  <div class="app">
+   <img src="https://play-lh.googleusercontent.com/igfqct-vw4I87Eg9Mi8CMbQh2XzOyFfE551sFdx2ZOcz0Bv-ZBX9ChXRdBvrqJq8QUcE8nZOhMRjReiNy1CeQw=w240-h480" alt="Hago">
+   <span>Hago</span>
+  </div>
+  <div class="app">
+   <img src="https://play-lh.googleusercontent.com/XwZ8Vm7c5MgO3PzaC_72T15KyXqb4nYh1D6CA5uHdO_O7frY3TxN9R3lB_r-t9lkIbtlI7v06KbkI4BhOepQHA=w240-h480" alt="Bolo Hey">
+   <span>Bolo Hey</span>
+  </div>
+  <div class="app">
+   <img src="https://play-lh.googleusercontent.com/QYBR-duXeizWv3UEuUqG27G6_Vk002Cnav5jn5PwoS5aYEYRCUrAxa28xR-BYKsZVOre699sxvRVBUxsnisnQw=w240-h480" alt="TiLike">
+   <span>TiLike</span>
+  </div>
+ </div>
+ <p class="muted" style="margin-top:12px">App logos are displayed for identification only.</p>
 </section>
 
-<section id="otp" class="screen form-screen">
-  <div class="panel">
-    <div class="mini-brand">❤️ Loading.ola</div>
-    <h2>Verify mobile number</h2>
-    <p id="otpHint">Enter the demo OTP shown below.</p>
-    <input class="field" id="otpCode" type="text" inputmode="numeric" maxlength="6" placeholder="Enter 6-digit OTP">
-    <button class="btn action" type="button" onclick="verifyOtpDemo()">Verify OTP</button>
-    <p class="small-note">Demo OTP: 123456. This is not a real verification.</p>
-    <button class="back" type="button" onclick="showScreen('mobile')">← Back</button>
-  </div>
+<section class="card">
+ <h2>👤 Account Details</h2>
+ <input id="uid" type="text" inputmode="numeric" placeholder="Enter Qwick Live UID">
+ <button onclick="lookupUID()">Check Account</button>
+ <div class="result" id="profile"></div>
 </section>
 
-<section id="help" class="screen form-screen">
-  <div class="panel">
-    <div class="mini-brand">❤️ Loading.ola</div>
-    <h2>Get Help</h2>
-    <p>Account help and recovery options will be added in a future version.</p>
-    <button class="btn action" type="button" onclick="showScreen('main')">Back to Login</button>
-  </div>
+<section class="card">
+ <h2>💎 Select Diamonds</h2>
+ <div class="packages">
+  <button onclick="choose(100)">100 Diamonds</button>
+  <button onclick="choose(500)">500 Diamonds</button>
+  <button onclick="choose(1000)">1000 Diamonds</button>
+  <button onclick="choose(5000)">5000 Diamonds</button>
+ </div>
+ <input id="quantity" type="number" min="100" step="1" placeholder="Custom Diamonds (Minimum 100)" oninput="calculate()">
+ <div class="price" id="price">₹0.00</div>
+ <p class="muted" style="text-align:center">Display rate: ₹1.27 per diamond</p>
 </section>
+
+<section class="card">
+ <h2>📱 QR Code & UPI Details</h2>
+ <div class="qr-area">
+  <img src="upi-qr.png" alt="UPI QR Code">
+  <p class="muted">UPI QR Image</p>
+ </div>
+ <div class="upi">
+  <p class="muted">UPI ID</p>
+  <strong>parasharprince@naviaxis</strong>
+ </div>
+ <div class="notice" style="margin-top:13px">
+  Display-only preview. Payment processing, transaction verification and diamond delivery are disabled. Do not make payments through this page.
+ </div>
+</section>
+
+<section class="card">
+ <h2>🛠 Admin Panel</h2>
+
+ <div id="loginBox">
+  <p class="muted">Admin ID and password se login karein.</p>
+  <input id="adminId" type="text" placeholder="Admin ID" autocomplete="username">
+  <input id="adminPassword" type="password" placeholder="Admin Password" autocomplete="current-password">
+  <button onclick="adminLogin()">Admin Login</button>
+ </div>
+
+ <p id="adminMessage" class="muted" aria-live="polite"></p>
+
+ <div class="dashboard" id="dashboard">
+  <h2>Admin Dashboard</h2>
+  <div class="status" id="websiteStatus">Website status: Checking...</div>
+  <div class="status">Diamond Delivery: OFF</div>
+  <div class="notice">Payment collection and diamond delivery are disabled.</div>
+  <button class="admin" onclick="adminLogout()">Logout</button>
+ </div>
+</section>
+
+<footer>
+ Qwick Live Diamond Recharge<br>
+ Diamond Delivery: OFF
+</footer>
+
+</div>
 
 <script>
-function showScreen(id) {
-  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
+const API="https://qwick-live-diamond-backend.onrender.com";
+const RATE=1.27;
+let adminToken=null;
+
+function choose(n){
+ document.getElementById("quantity").value=n;
+ calculate();
 }
-function hasTerms() {
-  if (!document.getElementById('termsCheck').checked) {
-    alert('Please accept the terms and confirm that you are 18 or older.');
-    return false;
-  }
-  return true;
+
+function calculate(){
+ const q=Number(document.getElementById("quantity").value);
+ document.getElementById("price").textContent=
+ q>=100 && Number.isInteger(q) ? "₹"+(q*RATE).toFixed(2) : "₹0.00";
 }
-function socialDemo(provider) {
-  if (!hasTerms()) return;
-  alert(provider + ' sign-in is a visual demo. Real sign-in is not connected yet.');
+
+async function lookupUID(){
+ const uid=document.getElementById("uid").value.trim();
+ const box=document.getElementById("profile");
+
+ if(!/^[0-9]{1,20}$/.test(uid)){
+  box.textContent="Please enter a valid UID.";
+  return;
+ }
+
+ box.textContent="Checking account...";
+
+ try{
+  const response=await fetch(API+"/api/lookup?uid="+encodeURIComponent(uid));
+  const data=await response.json();
+
+  if(!response.ok) throw new Error(data.error||"Account not found");
+
+  box.innerHTML="";
+  const img=document.createElement("img");
+  img.src=data.avatar||"";
+  img.alt="Profile photo";
+
+  const name=document.createElement("p");
+  name.textContent=data.name||"Name unavailable";
+
+  const id=document.createElement("p");
+  id.className="muted";
+  id.textContent="UID: "+data.uid;
+
+  box.append(img,name,id);
+ }catch(error){
+  box.textContent=error.message||"Lookup failed. Try again.";
+ }
 }
-function legal(name) {
-  alert(name + ' page will be added before launch.');
+
+async function adminLogin(){
+ const id=document.getElementById("adminId").value.trim();
+ const password=document.getElementById("adminPassword").value;
+ const message=document.getElementById("adminMessage");
+
+ if(!id||!password){
+  message.textContent="Please enter Admin ID and Password.";
+  return;
+ }
+
+ message.textContent="Logging in...";
+
+ try{
+  const response=await fetch(API+"/api/admin/login",{
+   method:"POST",
+   headers:{"Content-Type":"application/json"},
+   body:JSON.stringify({admin_id:id,password:password})
+  });
+
+  const data=await response.json();
+
+  if(!response.ok) throw new Error(data.error||"Login failed");
+
+  adminToken=data.token;
+  document.getElementById("adminPassword").value="";
+  document.getElementById("loginBox").style.display="none";
+  document.getElementById("dashboard").style.display="block";
+  message.textContent="Login successful.";
+
+  await loadAdminSettings();
+ }catch(error){
+  message.textContent=error.message||"Unable to login. Try again.";
+ }
 }
-function demoLogin() {
-  if (!hasTerms()) { showScreen('main'); return; }
-  const n = document.getElementById('mobileNumber').value.trim();
-  const p = document.getElementById('password').value;
-  if (!/^[0-9]{10}$/.test(n) || !p) {
-    alert('Enter a valid 10-digit mobile number and a password for this demo.');
-    return;
-  }
-  alert('Demo only: secure account authentication is not connected.');
+
+async function loadAdminSettings(){
+ const status=document.getElementById("websiteStatus");
+ status.textContent="Website status: Checking...";
+
+ try{
+  const response=await fetch(API+"/api/admin/settings",{
+   headers:{"Authorization":"Bearer "+adminToken}
+  });
+
+  const data=await response.json();
+  if(!response.ok) throw new Error(data.error||"Unable to load settings");
+
+  status.textContent="Website status: "+(data.website_enabled?"ON":"OFF");
+ }catch(error){
+  status.textContent=error.message;
+ }
 }
-function sendOtpDemo() {
-  if (!hasTerms()) { showScreen('main'); return; }
-  const n = document.getElementById('mobileNumber').value.trim();
-  if (!/^[0-9]{10}$/.test(n)) {
-    alert('Please enter a valid 10-digit mobile number.');
-    return;
-  }
-  showScreen('otp');
-}
-function verifyOtpDemo() {
-  if (document.getElementById('otpCode').value.trim() === '123456') {
-    alert('Demo OTP accepted. No account has been created or logged in.');
-  } else {
-    alert('For this demo, enter 123456.');
-  }
+
+function adminLogout(){
+ adminToken=null;
+ document.getElementById("dashboard").style.display="none";
+ document.getElementById("loginBox").style.display="block";
+ document.getElementById("adminId").value="";
+ document.getElementById("adminPassword").value="";
+ document.getElementById("adminMessage").textContent="You are logged out.";
 }
 </script>
 </body>
